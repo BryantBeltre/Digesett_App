@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button (click)="volver()" color="dark">Volver</ion-button>
+    </ion-buttons>
+    <ion-title><b>MULTAS</b></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Aqui podras ver las multas ubicada en un mapa</ion-card-subtitle>
+      <ion-card-title>Multas</ion-card-title>
+    </ion-card-header>
+  </ion-card>
+  <ion-item color="dark" *ngFor="let multa of listarutina" button (click)="abrirP(multa.id)">
+
+    <ion-label>{{multa.tipoinfraccion}}</ion-label>
+    <ion-label slot="end">{{multa.placa}}</ion-label>
+    
+  </ion-item>
+
+
+</ion-content>

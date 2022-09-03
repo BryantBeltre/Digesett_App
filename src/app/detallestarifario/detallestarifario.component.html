@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title><b>Tarifario</b></ion-title>
+    <ion-buttons slot="end">
+      <ion-button color="dark" (click)="cerrarP()">Cerrar</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card>
+    <br>
+    <ion-label style="margin-left: 15px;" ><b> Articulo: </b></ion-label>
+    <ion-item >
+
+      <ion-label>{{articulo}}</ion-label>
+    </ion-item>
+    <br>
+    
+  <ion-label style="margin-left: 15px;"><b>Infraccion:  </b></ion-label>
+    <ion-item>
+      <p><b>{{infraccion}}</b></p>
+    </ion-item>
+    <br>
+
+    <ion-label style="margin-left: 15px;"><b>Monto $RD:</b> </ion-label>
+    <ion-item>
+
+      <ion-label><b>{{monto}} </b> </ion-label>
+    </ion-item>
+    
+  
+  
+  </ion-card>

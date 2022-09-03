@@ -1,0 +1,15 @@
+ion-label{
+    color: black;
+}
+ion-input{
+    background-color: rgb(255, 126, 79);
+    border-radius: 10px;
+}
+ion-content{
+    --background: rgb(221,108,22);
+    --background: linear-gradient(90deg, rgba(221,108,22,0.8127626050420168) 8%, rgba(233,161,15,0.896796218487395) 42%, rgba(116,236,107,0.8995973389355743) 69%, rgba(17,247,0,0.6138830532212884) 97%);
+}
+
+ion-card{
+    margin-top: 50%;
+}

@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button (click)="volver()"  color="primary">Volver</ion-button>
+    </ion-buttons>
+    <ion-title><b>VEHICULO</b></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card style="text-align: center;" >
+    <ion-card-header>
+      <ion-card-subtitle>Digita la placa y encuentra el veicurlo</ion-card-subtitle>
+      <ion-item>
+        <ion-card-title>Buscar Vehiculo</ion-card-title>
+        <img src="../../assets/img/buscar.png" alt="" slot="end">
+      </ion-item >
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-label><b> Placa: </b></ion-label>
+      <ion-item>
+        <ion-input [(ngModel)]="placainput"> </ion-input>
+      </ion-item>
+    </ion-card-content>
+
+    <ion-button color="dark" (click)="encontrar()">Encontrar Vehiculo</ion-button>
+  </ion-card>
+
+</ion-content>

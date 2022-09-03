@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button (click)="volver()" color="dark">Volver</ion-button>
+    </ion-buttons>
+    <ion-title>NOTICIAS</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card color="dark" *ngFor="let not of obtener">
+    <ion-card-header>
+      <ion-card-subtitle>{{not.author}}</ion-card-subtitle>
+      <ion-card-title>{{not.title}}</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+    {{not.description}}
+    </ion-card-content>
+    <img src="{{not.urlToImage}}" alt="">
+  </ion-card>
+
+</ion-content>

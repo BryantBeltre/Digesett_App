@@ -1,5 +1,7 @@
 {
   "name": "Digesett",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }

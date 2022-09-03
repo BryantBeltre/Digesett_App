@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title><b>CONDUCTOR</b></ion-title>
+    <ion-buttons slot="end">
+      <ion-button color="dark" (click)="cerrarP()">Cerrar</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card>
+    <br>
+    <ion-label style="margin-left: 15px;"><b> Licencia: </b></ion-label>
+    <ion-item>
+
+      <ion-label><b>{{licencia}}</b></ion-label>
+    </ion-item>
+    <br>
+
+    <ion-label style="margin-left: 15px;"><b>Nombres: </b></ion-label>
+    <ion-item>
+      <p><b>{{nombres}}</b></p>
+    </ion-item>
+    <br>
+
+    <ion-label style="margin-left: 15px;"><b>Apellidos:</b> </ion-label>
+    <ion-item>
+
+      <ion-label><b>{{apellidos}} </b> </ion-label>
+    </ion-item>
+
+    <ion-label style="margin-left: 15px;"><b>Fecha De Nacimiento:</b> </ion-label>
+    <ion-item>
+
+      <ion-label><b>{{fechanacimiento}} </b> </ion-label>
+    </ion-item>
+
+    <ion-label style="margin-left: 15px;"><b>Signo Zodiacal:</b> </ion-label>
+    <ion-item>
+
+      <ion-label><b>{{signozodiacal}} </b> </ion-label>
+    </ion-item>
+
+
+
+  </ion-card>
+</ion-content>

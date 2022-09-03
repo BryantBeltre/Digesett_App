@@ -1,0 +1,44 @@
+<!-- <ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle><b> Gestiona aqui todas tus funciones de agente </b></ion-card-subtitle>
+      <ion-card-title>DIGESETT</ion-card-title>
+      <img src="../../assets/img/Digesett logo.jpg" style="width:90px;" alt="">
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-item lines="full">
+        <ion-label position="floating" color="black">Email</ion-label>
+        <ion-input type="text" #email required></ion-input>
+      </ion-item> 
+      <ion-item lines="full">
+        <ion-label position="floating">Password</ion-label>
+        <ion-input type="password" #password required></ion-input>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+  <ion-button color="dark" expand="block" (click)="logIn(email, password)">Iniciar</ion-button>
+</ion-content>
+ -->
+
+ <ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle><b> Gestiona aqui todas tus funciones de agente </b></ion-card-subtitle>
+      <ion-card-title>DIGESETT</ion-card-title>
+      <img src="../../assets/img/Digesett logo.jpg" style="width:90px;" alt="">
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-label><b> Usuario: </b></ion-label>
+      <ion-item>
+        <ion-input [(ngModel)]="usuario.email"></ion-input>
+      </ion-item>
+      <ion-label><b> Contraseña: </b></ion-label>
+      <ion-item>
+        <ion-input type="password" [(ngModel)]="usuario.password"></ion-input>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+  <ion-button color="dark" expand="block" (click)="login()">Iniciar</ion-button>
+</ion-content>

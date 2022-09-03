@@ -1,0 +1,69 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button color="dark" (click)="volver()"  color="dark">Volver</ion-button>
+    </ion-buttons>
+    <ion-title>APLICAR MULTA</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card-content color="dark">
+    <ion-label><b> Cedula: </b></ion-label>
+    <ion-item>
+      <ion-input [(ngModel)]="multa.cedula"> </ion-input>
+    </ion-item>
+
+    <ion-label><b> Placa: </b></ion-label>
+    <ion-item>
+      <ion-input [(ngModel)]="multa.placa"> </ion-input>
+    </ion-item>
+
+    <ion-label><b> Tipo de Multa: </b></ion-label>
+    <ion-item>
+      <ion-input [(ngModel)]="multa.tipoinfraccion"> </ion-input>
+    </ion-item>
+
+    <ion-label><b> Evidenciar foto: </b></ion-label>
+    <ion-item>
+      <ion-buttons slot="start">
+        <ion-button>
+          <label for="file-upload">
+            <ion-icon slot="icon-only" name="images"></ion-icon>
+          </label>
+          <input (change)="newImg($event)" id="file-upload" style="display: none"  type="file" accept="image/*" >
+          <ion-label>{{multa.imagen}}</ion-label>
+        </ion-button>
+      </ion-buttons>
+    </ion-item>
+
+    <ion-label><b> Comentario: </b></ion-label>
+    <ion-item>
+      <ion-input [(ngModel)]="multa.comentario"> </ion-input>
+    </ion-item>
+
+    <ion-label><b> Latitud: </b></ion-label>
+    <ion-item>
+      <ion-input [(ngModel)]="multa.latitud"> </ion-input>
+    </ion-item>
+
+    <ion-label><b> Longitud: </b></ion-label>
+    <ion-item>
+      <ion-input [(ngModel)]="multa.longitud"> </ion-input>
+    </ion-item>
+
+    <ion-label><b> Fecha: </b></ion-label>
+    <ion-item>
+      <ion-input [(ngModel)]="multa.fecha"> </ion-input>
+    </ion-item>
+
+    <ion-label><b> Hora: </b></ion-label>
+    <ion-item>
+      <ion-input [(ngModel)]="multa.hora"> </ion-input>
+    </ion-item>
+  </ion-card-content>
+  <ion-button color="dark" (click)="guardar()">Registrar Multa</ion-button>
+
+
+</ion-content>

@@ -1,0 +1,70 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button (click)="cerrarsecion()" color="primary">Cerrar Sesion</ion-button>
+    </ion-buttons>
+    <ion-title>MENU</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card color="dark">
+    <ion-card-header>
+      <ion-card-subtitle><b>seleccione la opcion a utilizar</b></ion-card-subtitle>
+      <ion-card-title>FUNCIONES</ion-card-title>
+      <img src="../../assets/img/Digesett logo.jpg" alt="">
+    </ion-card-header>
+
+    <ion-card-content >
+        <ion-item color="dark" button (click)="gototarifario()">
+          <img src="../../assets/img/tikedTarifario.png" alt="" > 
+          <h6 style="margin: 5px;"><b>Tarifario de multas</b></h6>
+        </ion-item>
+        
+        <ion-item button (click)="gotovehiculoplaca()">
+          <img src="../../assets/img/carconsulta.png" alt="">
+          <h6 style="margin: 5px;"><b>Consultar vehiculo por placa</b></h6>
+        </ion-item>
+
+        <ion-item color="dark" button (click)=" gotoconductorlicencia()">
+          <img src="../../assets/img/licenciaconsulta.png" alt="">
+          <h6 style="margin: 8px;"><b>Consultar conductor por licencia</b></h6>
+        </ion-item>
+
+        <ion-item button (click)="gotoplicarruta()">
+          <img src="../../assets/img/addmulta.png" alt="">
+          <h6 style="margin: 5px;"><b>Aplicar multa</b></h6>
+        </ion-item>
+
+        <ion-item color="dark" button (click)="gotoconsultarruta()">
+          <img src="../../assets/img/multasconsulta.png" alt="">
+          <h6 style="margin: 5px;"><b>Consultar multas</b></h6>
+        </ion-item>
+
+        <ion-item button (click)="gotomapa()">
+          <img src="../../assets/img/mapamulta.png" alt="">
+          <h6 style="margin: 5px;"><b>Buscar multas en el mapa</b></h6>
+        </ion-item>
+
+        <ion-item color="dark" button (click)="gotonoticias()">
+          <img src="../../assets/img/noticias.png" alt="">
+          <h6 style="margin: 5px;"><b>noticias</b></h6>
+        </ion-item>
+
+        <ion-item button (click)="gotoclima()">
+          <img src="../../assets/img/climate.png" alt="">
+          <h6 style="margin: 5px;"><b>Clima</b></h6>
+        </ion-item>
+
+        <ion-item color="dark" button>
+          <img src="../../assets/img/zodiaco.png" alt="">
+          <h6 style="margin: 5px;"><b>Signo Zodiacal del Agente</b></h6>
+        </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+
+
+
+</ion-content>

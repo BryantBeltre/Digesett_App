@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button (click)="volver()" color="primary">Volver</ion-button>
+    </ion-buttons>
+    <ion-title>CLIMA</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>El clima de Republica Dominicana</ion-card-subtitle>
+      <ion-card-title>El clima</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <img id="imgclima" src="../../assets/img/climate.png" alt="" width="90px">
+      <ion-item *ngFor="let c of obtenerclima">
+       <img src="../../assets/img/cloud.png" alt="">
+       <h6>{{c.main}}</h6>
+       <h6 slot="end">{{c.description}}</h6>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

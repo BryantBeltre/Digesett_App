@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title><b>MULTAS</b></ion-title>
+    <ion-buttons slot="end">
+      <ion-button color="dark" (click)="cerrarP()">Cerrar</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card>
+    <br>
+    <ion-label style="margin-left: 15px;" ><b> Cedula: </b></ion-label>
+    <ion-item >
+
+      <ion-label>{{cedula}}</ion-label>
+    </ion-item>
+    <br>
+    
+  <ion-label style="margin-left: 15px;"><b>Placa:  </b></ion-label>
+    <ion-item>
+      <p><b>{{placa}}</b></p>
+    </ion-item>
+    <br>
+
+    <ion-label style="margin-left: 15px;"><b>Comentario:</b> </ion-label>
+    <ion-item>
+
+      <ion-label><b>{{comentario}} </b> </ion-label>
+    </ion-item>
+
+    <ion-label style="margin-left: 15px;"><b>Fecha:</b> </ion-label>
+    <ion-item>
+
+      <ion-label><b>{{fecha}} </b> </ion-label>
+    </ion-item>
+
+    <ion-label style="margin-left: 15px;"><b>Hora:</b> </ion-label>
+    <ion-item>
+
+      <ion-label><b>{{hora}} </b> </ion-label>
+    </ion-item>
+
+    <ion-label style="margin-left: 15px;"><b>Latitud:</b> </ion-label>
+    <ion-item>
+
+      <ion-label><b>{{latitud}} </b> </ion-label>
+    </ion-item>
+
+    <ion-label style="margin-left: 15px;"><b>Longitud:</b> </ion-label>
+    <ion-item>
+
+      <ion-label><b>{{longitud}} </b> </ion-label>
+    </ion-item>
+
+    <ion-card>
+      <img src="{{imagen}}" alt="">
+    </ion-card>
+
+    
+  
+  
+  </ion-card>

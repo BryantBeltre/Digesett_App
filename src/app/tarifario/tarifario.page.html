@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button (click)="volver()" color="primary">Volver</ion-button>
+    </ion-buttons>
+    <ion-title><b>TARIFARIO</b></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card color="dark">
+    <ion-card-header>
+      <ion-card-subtitle>Aqui podras ver los tipos de multas</ion-card-subtitle>
+      <ion-card-title>Tarifario</ion-card-title>
+    </ion-card-header>
+<!-- 
+    <ion-card-content>
+
+
+    </ion-card-content> -->
+  </ion-card>
+  <ion-item color="dark" *ngFor="let tarifa of listarutina" button (click)="abrirP(tarifa.id)">
+
+    <ion-label>{{tarifa.articulo_ley}}</ion-label>
+    
+  </ion-item>
+
+
+</ion-content>

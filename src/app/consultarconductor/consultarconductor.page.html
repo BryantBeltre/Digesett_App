@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button (click)="volver()" color="primary">Volver</ion-button>
+    </ion-buttons>
+    <ion-title><b>CONDUCTOR</b></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card style="text-align: center;">
+    <ion-card-header>
+      <ion-card-subtitle>Digita la licencia y encuentra el conductor</ion-card-subtitle>
+      <ion-item>
+        <ion-card-title>Buscar Licencia</ion-card-title>
+        <img src="../../assets/img/buscar.png" alt="" slot="end">
+      </ion-item>
+    </ion-card-header>
+
+    <ion-card-content >
+      <ion-label><b> Licencia: </b></ion-label>
+      <ion-item>
+        <ion-input [(ngModel)]="licenciainput"> </ion-input>
+      </ion-item>
+    </ion-card-content>
+
+    <ion-button color="dark" (click)="encontrar()">Encontrar Licencia</ion-button>
+  </ion-card>
+
+</ion-content>
